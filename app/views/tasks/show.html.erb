@@ -1,0 +1,11 @@
+<h1>
+ Here is the selected Task
+ </h1>
+<p>
+Title: <%= @task.title %>
+</p>
+<p>
+Description: <%= @task.description %>
+</p>
+<%= link_to "Back to List", tasks_path %>
+<%= link_to "Edit", edit_task_path(@task) %>
