@@ -19,6 +19,14 @@
     <%= f.text_area :description %>
     </p>
     <p>
+    <% if @task.image.attached? %>
+        <%= image_tag(@task.image)%>
+    <% end %>
+    <%= f.label :image %>
+    <%= f.file_field :image, style: "width: 200px; display: block" %>
+    </p>
+
+    <p>
     <%= f.submit "Create Task", disable_with: 'Creating...' %>
     </p>
 <% end %>

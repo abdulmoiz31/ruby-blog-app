@@ -7,5 +7,8 @@ Title: <%= @task.title %>
 <p>
 Description: <%= @task.description %>
 </p>
+<p style="width: 200px; height: auto;">
+Image: <%= image_tag(@task.image) %>
+</p>
 <%= link_to "Back to List", tasks_path %>
 <%= link_to "Edit", edit_task_path(@task) %>
