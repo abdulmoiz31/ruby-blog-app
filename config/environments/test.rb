@@ -29,7 +29,7 @@ Rails.application.configure do
   # Raise exceptions instead of rendering exception templates.
   config.action_dispatch.show_exceptions = false
 
-  config.active_storage.service = :amazon
+  config.active_storage.service = :test
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
