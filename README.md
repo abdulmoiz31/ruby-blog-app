@@ -1,24 +1,9 @@
-# README
+# How to Run
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version => '3.0.2'
 
-Things you may want to cover:
+* run 'bundle install' to install all the gems listed in gemfile
 
-* Ruby version
+* S3 bucket was used in this project to store images so you have to configure your S3 bucket and put its credentials in config/storage.yml file or else you can use local   storage for that.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* run 'rails s' to run project.
